@@ -14,6 +14,7 @@
 
   - name: start and enabled
     ansible.buildin.service:
+      name: mongod
       state: started
       enabled: yes
 
