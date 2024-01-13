@@ -7,8 +7,8 @@
       name: nginx
       state: present
 
-   - name: recursively remove directory
-     ansible.builtin.file:
+  - name: recursively remove directory
+    ansible.builtin.file:
       path: /usr/share/nginx/html
       state: absent
 
